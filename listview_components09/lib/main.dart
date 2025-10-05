@@ -229,13 +229,7 @@ class Screen extends StatelessWidget {
               style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Five',
-              style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
-            ),
-          ),
+          
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
