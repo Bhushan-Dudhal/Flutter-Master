@@ -19,6 +19,8 @@ class MyApp extends StatelessWidget {
 }
 
 class  Scrren  extends  StatelessWidget{
+  const Scrren({super.key});
+
 
   @override
 

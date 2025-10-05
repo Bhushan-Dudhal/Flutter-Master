@@ -14,6 +14,8 @@ class MyApp extends StatelessWidget {
 }
 
 class Screen extends StatelessWidget {
+  const Screen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +25,7 @@ class Screen extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Container(
+        child: SizedBox(
           height: 100,
           width: 100,
 

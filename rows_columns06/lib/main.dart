@@ -18,6 +18,8 @@ class MyApp extends StatelessWidget {
 }
 
 class Screen extends StatelessWidget {
+  const Screen({super.key});
+
 
   @override
 
@@ -28,7 +30,7 @@ class Screen extends StatelessWidget {
         backgroundColor: Colors.blueAccent,
         centerTitle: true,
       ),
-       body:Container(
+       body:SizedBox(
         width: 400,
         height: 400,
        child:   Column(
