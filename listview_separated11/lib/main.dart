@@ -32,7 +32,7 @@ class Screeen extends StatelessWidget {
     ];
     return Scaffold(
       appBar: AppBar(
-        title: Text("HOme"),
+        title: Text("Home"),
         backgroundColor: Colors.deepPurple,
         centerTitle: true,
       ),
