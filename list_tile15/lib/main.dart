@@ -53,7 +53,7 @@ class Screen extends StatelessWidget{
   @override
 
   Widget build(BuildContext contex){
-  var arrname = ['Bhushan', 'Bharat', 'Ravi', 'Tushar', 'Anil', 'Ram', 'Rahul'];
+  var arrname = ['Bhushan', 'Bharat', 'Ravi', 'Tushar', 'Anil', 'Ram', 'Rahul','vishal'];
 
     return Scaffold(
         appBar: AppBar(title: Text("Home"),
