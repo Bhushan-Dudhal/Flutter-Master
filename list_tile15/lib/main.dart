@@ -15,64 +15,71 @@
 // }
 
 // class DashbordS  extends StatelessWidget {
-//   var arrname = ['Bhushan', 'Bharat', 'Ravi', 'Tushar', 'Anil', 'Ram', 'Rahul'];
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
 //       appBar: AppBar(title: Text("Home"), backgroundColor: Colors.pinkAccent),
 
-//       body: ListView.separated(
-//         itemBuilder: (context, index) {
-//           return ListTile(
-
-//   leading: Text('${index+1})'),
-//   title: Text(arrname[index]),
-//   subtitle: Text('Number'),
-//   trailing: Icon(Icons.add),
-
-//           );
-//         },
-//         itemCount: arrname.length,
-//         // reverse: true,
-//         // scrollDirection: Axis.horizontal,
-//         separatorBuilder: (context, index) {
-//           return Divider(height: 20, thickness: 2);
-//         },
-//       ),
-//     );
+//      
 //   }
 // }
 
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-// void main() {
-//   runApp(app);
-// }
+void main() {
+  runApp(MyApp());
+}
 
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//        title: "App",
-//        theme: ThemeData(
-//         primarySwatch: Colors.deepPurple
-//        ),
+  @override
+  Widget build(BuildContext context) {
 
-//        home: ,
-//     );
-//   }
-// }
+    return MaterialApp(
+       title: "App",
+       theme: ThemeData(
+        primarySwatch: Colors.deepPurple
+       ),
+
+       home: Screen(),
+    );
+  }
+}
 
 
-// class Screen extends StatelessWidget{
+class Screen extends StatelessWidget{
 
-//   @override
+  @override
 
-//   Widget build(BuildContext contex){
-//     return Scaffold(
+  Widget build(BuildContext contex){
+  var arrname = ['Bhushan', 'Bharat', 'Ravi', 'Tushar', 'Anil', 'Ram', 'Rahul'];
 
-//     );
-//   }
-// }
+    return Scaffold(
+        appBar: AppBar(title: Text("Home"),
+        backgroundColor: Colors.indigoAccent,
+        centerTitle: true
+        ),
+
+ body: ListView.separated(
+        itemBuilder: (context, index) {
+          return ListTile(
+
+  leading: Text('${index+1})'),
+  title: Text(arrname[index]),
+  subtitle: Text('Number'),
+  trailing: Icon(Icons.add),
+
+          );
+        },
+        itemCount: arrname.length,
+        // reverse: true,
+        // scrollDirection: Axis.horizontal,
+        separatorBuilder: (context, index) {
+          return Divider(height: 20, thickness: 2);
+        },
+      ),
+    );
+
+  }
+}
