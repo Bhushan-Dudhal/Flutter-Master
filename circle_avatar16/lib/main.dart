@@ -24,6 +24,7 @@ class Screen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Circle Avtar"),
         backgroundColor: Colors.lightBlueAccent,
+        centerTitle: true,
       ),
       body: Center(
         child: CircleAvatar(
