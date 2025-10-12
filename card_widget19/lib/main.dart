@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'new app',
+      title: 'app',
 
       theme: ThemeData(primarySwatch: Colors.grey),
       home: Screen(),
@@ -21,8 +21,9 @@ class Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("HOme"),
+      appBar: AppBar(title: Text("Home"),
       backgroundColor: Colors.deepOrange,
+      centerTitle: true,
       ),
       body:Center(
         child: Card(
