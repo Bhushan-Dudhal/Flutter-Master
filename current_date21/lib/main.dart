@@ -15,9 +15,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     var time = DateTime.now();
     return MaterialApp(
+
       debugShowCheckedModeBanner: false,
+      title: "App",
       home: Scaffold(
-        appBar: AppBar(title: Text("Hello"), backgroundColor: Colors.amber),
+        appBar: AppBar(title: Text("Home"), backgroundColor: Colors.amber,
+        centerTitle: true,
+        ),
         body: Center(
           child: Container(
             width: 250,
