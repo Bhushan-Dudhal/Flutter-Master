@@ -19,7 +19,9 @@ class _MyApp extends State {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: Text("App"), backgroundColor: Colors.amber),
+        appBar: AppBar(title: Text("App"), backgroundColor: Colors.amber,
+        centerTitle: true,
+        ),
 
         body: Center(
           child: Container(
@@ -36,7 +38,7 @@ class _MyApp extends State {
                   onPressed: () {
                     setState(() {});
                   },
-                  child: Text("welcome"),
+                  child: Text("App"),
                 ),
               ],
             ),
