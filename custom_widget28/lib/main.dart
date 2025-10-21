@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
               btnName: 'Click',
               icon: Icon(Icons.lock),
               callBack: () {
-                print("call");
+                print("call function");
               },
             ),
           ),
