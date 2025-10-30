@@ -26,7 +26,7 @@ class Screen extends StatelessWidget {
         backgroundColor: Colors.amber,
         centerTitle: true,
       ),
-      body: Text("Heloo"),
+      body:Text('Welcome
     );
   }
 }
