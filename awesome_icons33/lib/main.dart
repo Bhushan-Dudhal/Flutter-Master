@@ -26,8 +26,9 @@ class Screen extends StatelessWidget {
         backgroundColor: Colors.amber,
         centerTitle: true,
       ),
-      body:Text('Welcome to App'
-    )
+      body:Container(
+        child: Text("Welcome"),
+      )
     );
   }
-}
+} 
