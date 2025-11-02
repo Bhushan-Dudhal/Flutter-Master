@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class Screen extends StatelessWidget {
   @override
   Widget build(BuildContext contect) {
@@ -27,7 +26,9 @@ class Screen extends StatelessWidget {
         centerTitle: true,
       ),
       body:Container(
-        child: Text("Welcome"),
+        child: Text("Welcome App"),
+        
+      
       )
     );
   }
