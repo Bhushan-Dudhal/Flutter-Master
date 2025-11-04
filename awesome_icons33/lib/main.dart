@@ -47,6 +47,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
   home: Scaffold(
     appBar: AppBar(title: Text("welcome"),),
+    body: Container(
+      child: Text("welcome"),
+    ),
   ),
     );
   }
