@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class Screen extends StatelessWidget{
 
   @override
