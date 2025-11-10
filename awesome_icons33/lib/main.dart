@@ -1,39 +1,5 @@
-// import 'package:flutter/material.dart';
-
-// void main() {
-//   runApp(MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: "App",
-//       theme: ThemeData(primarySwatch: Colors.brown),
-//       home: Screen(),
-//     );
-//   }
-// }
-// class Screen extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext contect) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text("home"),
-//         backgroundColor: Colors.amber,
-//         centerTitle: true,
-//       ),
-//       body:Container(
-//         child: Text("Welcome App"),
-
-//       )
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -43,14 +9,40 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  build(BuildContext context) {
     return MaterialApp(
-  home: Scaffold(
-    appBar: AppBar(title: Text("welcome"),),
-    body: Container(
-      child: Text("welcome"),
-    ),
-  ),
+      debugShowCheckedModeBanner: false,
+      title: "App",
+      theme: ThemeData(shadowColor: Colors.black),
+      home: Screen(),
     );
   }
 }
+
+class Screen extends StatelessWidget {
+  @override
+  build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Home"),
+        backgroundColor: Colors.blueGrey,
+        centerTitle: true,
+      ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+                Icon(Icons.abc_outlined),
+                SizedBox(height: 20,),
+                FaIcon(FontAwesomeIcons.youtube,color: Colors.red,)
+
+            ],
+          )
+        ],
+      )
+    );
+  }
+}
+
