@@ -24,7 +24,7 @@ class Screen extends StatelessWidget {
   @override
   build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("Home"),
+        appBar: AppBar(title: Text("Home Page"),
         backgroundColor: Colors.deepOrangeAccent,
         centerTitle: true,
         ),
