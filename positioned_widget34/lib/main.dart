@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   build(BuildContext context) {
     return MaterialApp(
-      title: "APP",
+      debugShowCheckedModeBanner: false,
+      title: "Basic App",
 
       theme: ThemeData(shadowColor: Colors.blue),
       home: Screen(),
