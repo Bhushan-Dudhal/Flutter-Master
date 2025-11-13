@@ -30,24 +30,26 @@ class Screen extends StatelessWidget {
         centerTitle: true,
         ),
 
-        body: Container(
-            width:300,
-            height: 200,
-            color:CupertinoColors.darkBackgroundGray,
-            child:Stack(
-                children: [
-                   Positioned(
-                    bottom: 41,
-                    left: 41,
-
-                     child: Container(
-                      height: 100,
-                      width: 100,
-                      color: Colors.blueGrey,
-                     ),
-                   )
-                ],
-            )
+        body:Container(
+          child: Container(
+              width:300,
+              height: 200,
+              color:CupertinoColors.darkBackgroundGray,
+              child:Stack(
+                  children: [
+                     Positioned(
+                      bottom: 41,
+                      left: 41,
+          
+                       child: Container(
+                        height: 100,
+                        width: 100,
+                        color: Colors.blueGrey,
+                       ),
+                     )
+                  ],
+              )
+          ),
         ),
     );
   }

@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Button",
+      title: "Button new  app",
       theme: ThemeData(primarySwatch: Colors.cyan),
       home: _MyApp(),
     );
@@ -34,7 +34,7 @@ class _MyApp extends StatelessWidget {
             TextButton(
               onPressed: () {
                 print('Text Button');
-              },
+              }, 
               onLongPress: () {
                 print('On Long Press');
               },
