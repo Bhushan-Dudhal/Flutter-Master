@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "welcome",
+          "App welcome",
           style: TextStyle(color: Colors.black),
         ),
       ),
