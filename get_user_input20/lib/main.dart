@@ -25,7 +25,7 @@ class Screen extends StatelessWidget {
     var passText = TextEditingController();
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: Text("Home Page"),
         backgroundColor: const Color.fromARGB(255, 195, 31, 121),
         centerTitle: true,
       ),
