@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:screen_data_passing/Profile_Screen.dart';
+// import 'package:screen_data_passing/Profile_Screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -39,36 +39,36 @@ class _MyAppState extends State<_MyApp> {
         centerTitle: true,
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              "Dashborld Screen",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 20),
-            Container(
-              width: 300,
-              child: TextField(
-                controller: names,
-                decoration: InputDecoration(border: OutlineInputBorder()),
-              ),
-            ),
-            SizedBox(height: 30),
-            ElevatedButton(
-              onPressed: () {
-                var names1 = names.text.toString();
-                print(names1);
+        // child: Column(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //     Text(
+        //       "Dashborld Screen",
+        //       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        //     ),
+        //     SizedBox(height: 20),
+        //     Container(
+        //       width: 300,
+        //       child: TextField(
+        //         controller: names,
+        //         decoration: InputDecoration(border: OutlineInputBorder()),
+        //       ),
+        //     ),
+        //     SizedBox(height: 30),
+        //     ElevatedButton(
+        //       onPressed: () {
+        //         var names1 = names.text.toString();
+        //         print(names1);
 
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Profile_Screen(names1)),
-                );
-              },
-              child: Text("Click here "),
-            ),
-          ],
-        ),
+        //         Navigator.push(
+        //           context,
+        //           MaterialPageRoute(builder: (context) => Profile_Screen(names1)),
+        //         );
+        //       },
+        //       child: Text("Click here "),
+        //     ),
+        //   ],
+        // ),
       ),
     );
   }
