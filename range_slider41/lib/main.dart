@@ -37,12 +37,14 @@ class HomeScreenState extends State<HomeScreen> {
       body: Center(
         child: RangeSlider(
           values: values,
+          min: 0,
+          max: 100,
           labels: labels,
           onChanged: (newValues) {
             values = newValues;
-            setState(() {
-              
-            });
+            // print("$newValues");
+            print("$labels");
+            setState(() {});
           },
         ),
       ),
