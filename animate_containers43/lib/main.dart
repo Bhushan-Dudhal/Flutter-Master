@@ -26,7 +26,9 @@ class HomePageState extends State<HomePage> {
   var _height_ = 300.0;
   var _width_ = 200.0;
   Color bgColor = Colors.pink;
-  var retval = TextEditingController();
+  Decoration MyDec = BoxDecoration(borderRadius: BorderRadius.circular(20)
+  ,color: Colors.purpleAccent
+  );
   bool Flag = true;
   @override
   Widget build(BuildContext context) {
@@ -45,56 +47,37 @@ class HomePageState extends State<HomePage> {
               AnimatedContainer(
                 width: _width_,
                 height: _height_,
-                color: bgColor,
+                // color: bgColor,
+                curve: Curves.easeOutCubic,
+                decoration: MyDec,
                 duration: Duration(seconds: 2),
               ),
-              SizedBox(height: 20),
-              Container(
-                width: 300,
-                child: TextField(
-                  controller: retval,
-                  decoration: InputDecoration(
-                    label: Text("Enter Value Box"),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height: 20),
+              SizedBox(height: 22),
               OutlinedButton(
                 onPressed: () {
                   if (Flag) {
                     _height_ = 200.0;
                     _width_ = 300.0;
                     Flag = false;
-                    bgColor = Colors.purpleAccent;
+                    // bgColor = Colors.purpleAccent;
+                    MyDec = BoxDecoration(
+                      borderRadius: BorderRadius.circular(22),
+                      color: Colors.redAccent,
+                    );
                     setState(() {});
                   } else {
                     _height_ = 300.0;
                     _width_ = 200.0;
                     bgColor = Colors.red;
+                    MyDec = BoxDecoration(
+                      borderRadius: BorderRadius.circular(14),
+                      color: Colors.deepOrangeAccent
+                    );
                     Flag = true;
                     setState(() {});
                   }
                 },
                 child: Text("Click"),
-              ),
-              SizedBox(height: 20),
-
-              OutlinedButton(
-                onPressed: () {
-                  if (Flag) {
-                    var up1 = retval.text.toString();
-                    var update = int.parse(up1);
-                    print(update);
-                    Flag = false;
-                  } else {
-                    
-                    Flag = true;
-                  }
-                },
-                child: Text("Click To Update"),
               ),
             ],
           ),
