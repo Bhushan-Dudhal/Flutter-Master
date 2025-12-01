@@ -21,7 +21,7 @@ class about extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text("Welcome"),
+              child: Text("Welcome to"),
             ),
           ],
         ),
