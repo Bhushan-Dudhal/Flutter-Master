@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class about extends StatelessWidget {
-  var NameForm;
+  final String NameForm;
 
   about(this.NameForm);
 
