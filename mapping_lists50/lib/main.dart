@@ -9,9 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: HomePage());
   }
 }
 
@@ -20,44 +18,48 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => HomePageState();
 }
 
-class HomePageState extends State<HomePage> {
-  var NameList = ["Bhushan", "Shubham", "Rushi", "Ram", "Ravi",];
+class HomePageState extends State<HomePage>
+    with SingleTickerProviderStateMixin {
+  late Animation animation;
+  late AnimationController animationController;
+  late Animation colorAnimation;
+
+  @override
+  initState() {
+    super.initState();
+    animationController = AnimationController(
+      vsync: this,
+      duration: Duration(seconds: 5),
+    );
+    animation = Tween(begin: 300.0, end: 0.0).animate(animationController);
+    colorAnimation =ColorTween(begin: Colors.purple,end: Colors.orange).animate(animationController);
+
+    animationController.addListener(() {
+      print(animation.value);
+      setState(() {});
+    });
+    animationController.forward();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Home"),
-        backgroundColor: Colors.purple,
+        backgroundColor: colorAnimation.value,
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          Container(
-            height: 400,
-            width: 505,
-            // color: Colors.red,
-            child: ListView(
-              children: NameList.map((val) {
-                return Center(child: Padding(
-                  padding: const EdgeInsets.all(20),
-                  child:SingleChildScrollView(
-                    child: Container(
-                      decoration: BoxDecoration(
-                      color: Colors.deepPurpleAccent,
-                        borderRadius: BorderRadius.circular(12)
-                      ),
-                      width: double.infinity,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Center(child: Text(val)),
-                      )),
-                  ),
-                ));
-              }).toList(),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: animation.value,
+              width: animation.value,
+              color: Colors.red,
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
