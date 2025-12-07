@@ -65,7 +65,7 @@ class HomePageState extends State<HomePage>
                   height: radius * _animation.value,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.purpleAccent.withOpacity(1.0 - _animation.value),
+                    color: Colors.deepOrange.withOpacity(1.0 - _animation.value),
                   ),
                 ),
               )
