@@ -30,7 +30,7 @@ class HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home Page "),
+        title: Text("Range Slider"),
         backgroundColor: Colors.red,
         centerTitle: true,
       ),
