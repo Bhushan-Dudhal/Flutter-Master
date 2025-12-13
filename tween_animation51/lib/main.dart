@@ -29,9 +29,7 @@ class HomePageState extends State<HomePage> {
       backgroundColor: Colors.red,
       centerTitle: true,
       ),
-      body: Container(
-        child: Text("Welcome"),
-      ),
+      body:Text("welcome")
     );
   }
 }
