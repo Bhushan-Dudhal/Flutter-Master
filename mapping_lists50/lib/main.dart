@@ -45,7 +45,7 @@ class HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: Text("Home Page"),
         backgroundColor: colorAnimation.value,
         centerTitle: true,
       ),
