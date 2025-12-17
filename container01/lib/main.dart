@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
           color: Colors.blue,
           child: const Center(
             child: Text(
-              "WELCOME ",
+              "WELCOME TO CONTAINER",
               style: TextStyle(
                 fontSize: 30, // Changed from 300 to 30 for visibility
                 color: Colors.blueAccent,
