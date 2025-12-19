@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "Image Widget", home: Screen());
+    return MaterialApp(title: "Demo", home: Screen());
   }
 }
 
