@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "Image", home: Screen());
+    return MaterialApp(title: "Image Widget", home: Screen());
   }
 }
 
@@ -20,7 +20,7 @@ class Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home page"),
+        title: Text("Home "),
         backgroundColor: Colors.blueGrey,
         centerTitle: true,
       ),
