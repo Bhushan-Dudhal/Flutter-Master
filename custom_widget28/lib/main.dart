@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(primarySwatch: Colors.lightGreen),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Creating a Custom Widget"),
+          title: Text("Home"),
           backgroundColor: Colors.greenAccent,
           centerTitle: true,
         ),
