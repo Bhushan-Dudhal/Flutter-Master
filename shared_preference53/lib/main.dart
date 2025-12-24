@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,41 +12,84 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
-      title: "Demo",
-
+      theme: ThemeData(primarySwatch: Colors.purple),
       home: HomePage(),
-    
     );
   }
 }
 
 class HomePage extends StatefulWidget {
   @override
-  State<HomePage> createState() => HomePAgeState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class HomePAgeState extends State<HomePage> {
+class _HomePageState extends State<HomePage> {
+  var nameController = TextEditingController();
+
+  var nameVal = "";
+
+  @override
+  void initState() {
+    super.initState();
+    getValue();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Home Page"),
-      backgroundColor: Colors.deepPurple,
-      centerTitle: true,
+      appBar: AppBar(
+        title: Text("Home"),
+        backgroundColor: Colors.purpleAccent,
+        centerTitle: true,
       ),
-      body: Center(
-        child: Container(
-          child: Column(
-            children: [
-               AnimatedCrossFade(firstChild: Container(
-                color: Colors.pink,
-                width: 300,
-                height: 300,
-               ), secondChild: Image.network(""), crossFadeState:CrossFadeState.showFirst , duration: Duration(seconds:3 ))
-            ],
+      body: Container(
+        child: Center(
+          child: Container(
+            width: 300,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextField(
+                  controller: nameController,
+                  decoration: InputDecoration(
+                    label: Text("Enter Data"),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 22),
+                OutlinedButton(
+                  onPressed: () async {
+                    var name = nameController.text.toString();
+
+                    var perf = await SharedPreferences.getInstance();
+
+                    perf.setString("name", name);
+                    setState(() {
+                      
+                    });
+                  },
+                  child: Text("Click"),
+                ),
+                SizedBox(height: 22),
+                Text("$nameVal"),
+              ],
+            ),
           ),
         ),
       ),
     );
+  }
+
+  void getValue() async {
+    var perfs = await SharedPreferences.getInstance();
+
+    var getName = perfs.getString("name");
+
+    nameVal = getName??"No Value Saved";
+    setState(() {
+      
+    });
   }
 }
