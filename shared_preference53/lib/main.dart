@@ -66,9 +66,7 @@ class _HomePageState extends State<HomePage> {
                     var perf = await SharedPreferences.getInstance();
 
                     perf.setString("name", name);
-                    setState(() {
-                      
-                    });
+                  
                   },
                   child: Text("Click"),
                 ),
