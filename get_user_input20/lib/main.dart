@@ -28,7 +28,7 @@ class Screen extends StatelessWidget {
         title: Text("Home Page"),
         backgroundColor: const Color.fromARGB(255, 195, 31, 121),
         centerTitle: true,
-      ),
+      ), 
 
       body: Center(
         child: Container(
