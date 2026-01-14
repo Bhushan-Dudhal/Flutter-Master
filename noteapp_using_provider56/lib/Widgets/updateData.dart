@@ -22,7 +22,6 @@ class _updatedDataState extends State<updatedData> {
   @override
   Widget build(BuildContext context) {
     print("updated  $index");
-    print("call");
     return Scaffold(
       body: Container(
         child: Center(
@@ -45,7 +44,7 @@ class _updatedDataState extends State<updatedData> {
                 TextField(
                   controller: noController,
                   decoration: InputDecoration(
-                    label: Text("Enter Your Mob"),
+                    label: Text("Enter Your MobNo"),
                     prefixIcon: Icon(Icons.update_disabled_rounded),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
