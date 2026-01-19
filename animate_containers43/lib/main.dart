@@ -25,7 +25,7 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   var _height_ = 300.0;
-  var _width_ = 200.0;
+  var _width_ = 250.0;
   Color bgColor = Colors.pink;
   Decoration MyDec = BoxDecoration(borderRadius: BorderRadius.circular(20)
   ,color: Colors.purpleAccent
