@@ -27,8 +27,9 @@ class HomePageState extends State<HomePage> {
   var _height_ = 300.0;
   var _width_ = 250.0;
   Color bgColor = Colors.pink;
-  Decoration MyDec = BoxDecoration(borderRadius: BorderRadius.circular(20)
-  ,color: Colors.purpleAccent
+  Decoration MyDec = BoxDecoration(
+    borderRadius: BorderRadius.circular(20),
+    color: Colors.purpleAccent,
   );
   bool Flag = true;
   @override
@@ -72,7 +73,7 @@ class HomePageState extends State<HomePage> {
                     bgColor = Colors.red;
                     MyDec = BoxDecoration(
                       borderRadius: BorderRadius.circular(14),
-                      color: Colors.deepOrangeAccent
+                      color: Colors.deepOrangeAccent,
                     );
                     Flag = true;
                     setState(() {});
