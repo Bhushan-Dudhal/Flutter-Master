@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: "state management",
       home:ChangeNotifierProvider(create: (context)=>CounterProvider(),
       child: Home(),
       ),
