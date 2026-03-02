@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "position widgets",
+      title: "flutter widgets",
 
       theme: ThemeData(shadowColor: Colors.blue),
       home: Screen(),
