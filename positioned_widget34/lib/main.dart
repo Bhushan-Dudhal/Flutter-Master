@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "flutter widgets",
+      title: "flutter widgets git add ",
 
       theme: ThemeData(shadowColor: Colors.blue),
       home: Screen(),
