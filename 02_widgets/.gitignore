@@ -1,0 +1,65 @@
+# Flutter/Dart/Pub
+.dart_tool/
+.packages
+.pub/
+build/
+
+# Flutter generated files
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.metadata
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Android
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/key.properties
+*.jks
+*.keystore
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+
+# MacOS
+macos/Pods/
+
+# Linux
+linux/flutter/ephemeral/
+
+# Windows
+windows/flutter/ephemeral/
+
+# Web
+lib/generated_plugin_registrant.dart
+
+# Coverage
+coverage/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
+.env
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# Misc
+.DS_Store
+Thumbs.db
