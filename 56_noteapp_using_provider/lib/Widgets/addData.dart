@@ -18,6 +18,7 @@ class _addDataState extends State<addData> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text(""),),
       body: Container(
         child: Center(
           child: Container(
